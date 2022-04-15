@@ -32,30 +32,30 @@ const Login = () => {
       <div className='w-1/2 mx-auto '>
         <h1 className='font-bold text-4xl text-green-800 ml-1 mt-1 mb-2 text-left'>Welcome!
         </h1>
-        <form className='bg-light-green rounded-lg py-10 shadow-lg shadow-green-800/40 mb-10 '>
-          <h1 className='text-white text-lg w-1/2 text-left mx-auto'>Please Log In...</h1>
-          <input className='bg-grey-100 rounded-md border-2 border-green-400/60 my-2 p-2 w-2/4'
+        <form className='bg-green-100/50 border-2 rounded-lg py-10 shadow-lg shadow-green-800/40 mb-10 '>
+          <h1 className='text-grey-700 text-md w-3/4 text-left mx-auto'>Please Log In...</h1>
+          <input className='bg-grey-100 rounded-md border-2 border-green-400/60 my-2 p-2 w-3/4'
             //onBlur={handleEmailChange}
             type="email"
             placeholder='Enter your email'
             ref={emailRef}
             required
           /><br/>
-          <input className='bg-grey-100 rounded-md border-2 border-green-400/60 my-2 p-2 w-2/4'
+          <input className='bg-grey-100 rounded-md border-2 border-green-400/60 my-2 p-2 w-3/4'
             //onBlur={handlePassChange}
             type="password"
             placeholder='Enter your password'
             ref={passwordRef}
             required
           /><br/>
-          <p className='text-left w-1/2 mx-auto font-semibold text-red-600 text-sm'>
+          <p className='text-left w-3/4 mx-auto font-semibold text-red-600 text-sm'>
             {errorText}</p>
           <input onClick={handleFormSubmit}
-            className='bg-dark-green text-white font-bold rounded-full p-2 mt-2 w-1/4'
+            className='bg-green-400 hover:text-white font-bold rounded-full p-2 mt-2 w-2/4 text-gray-700 hover:bg-green-800'
             type="submit"
             value="Log In"
           />
-          <p  onClick={navigateRegister} className='text-gray-300 text-sm mt-4 font-semibold cursor-pointer'>New To The Car Doctor? <span className='text-white'>Please Register</span></p>
+          <p  onClick={navigateRegister} className='text-gray-600 text-sm mt-4 font-semibold cursor-pointer'>New To The Car Doctor? <span className='text-black'>Please Register</span></p>
         </form>
         <p>or</p>
       </div>
