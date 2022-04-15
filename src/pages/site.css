@@ -1,0 +1,17 @@
+a.active{
+  color: rgb(4, 144, 4);
+}
+a:hover{
+  background: rgb(6, 97, 0);
+  color: azure;
+}
+.bg-light-green{
+  background-color:  rgb(6, 97, 0);
+}
+.bg-dark-green{
+  background-color: #243D25;
+}
+.btn-img-size{
+  height: 3rem;
+  width: 5rem;
+}
